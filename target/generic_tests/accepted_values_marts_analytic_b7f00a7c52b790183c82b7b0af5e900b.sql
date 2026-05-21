@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="rfm_segment", model=get_where_subquery(ref('marts_analytics')), values=["Campeones","Clientes Leales","Nuevos Clientes","No Podemos Perderlos","Hibernando / Perdidos","Regulares / Potenciales"]) }}

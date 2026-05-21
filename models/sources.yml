@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: kaggle_retail
+    description: "Datos crudos de transacciones de e-commerce provenientes de Kaggle"
+    # AQUÍ ESTÁ EL CAMBIO CLAVE:
+    database: ga4-project-496021
+    schema: ga4_data
+    tables:
+      - name: retail_online_raw
+        description: "Tabla staging con datos crudos de retail"
+        columns:
+          - name: invoice
+            description: "Identificador único de cada transacción (Factura)"
+            tests:
+              - not_null
+          - name: stockcode
+            description: "Código del producto"
+      - name: customer_metrics
+        description: rfm
+        columns: 
+          - name: customer_id
+            description: id de los usuarios

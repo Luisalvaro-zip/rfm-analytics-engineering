@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: fct_rfm_analysis
+    description: "Tabla final de segmentación RFM por cliente."
+    columns:
+      - name: customer_id
+        description: "ID único del comprador."
+        tests:
+          - unique
+          - not_null
+          
+      - name: rfm_segment
+        description: "Etiqueta de negocio asignada al cliente (ej. Campeones, En Riesgo)."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:          # <-- NUEVO REQUISITO DE DBT 2.0
+                values:
+                  - 'Campeones'
+                  - 'Clientes Leales'
+                  - 'Nuevos Clientes'
+                  - 'No Podemos Perderlos'
+                  - 'Hibernando / Perdidos'
+                  - 'Regulares / Potenciales'

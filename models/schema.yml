@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: kaggle_source
+    description: "Fuente de datos de Kaggle con transacciones de e-commerce"
+    database: ga4-project-496021  # Tu ID de Proyecto
+    schema: ga4_data              # Tu Dataset en BigQuery
+    tables:
+      - name: retail_online_stg   # El nombre exacto de la tabla que cargamos
+        description: "Tabla staging con datos crudos de retail"
+        columns:
+          - name: invoice
+            description: "Identificador único de cada transacción (Factura)"
+            tests:
+              - not_null          # Tip de pro: añade un test básico
+          - name: stockcode
+            description: "Código del producto"
+
+      - name: retail_transaction_int   # El nombre exacto de la tabla que cargamos
+        description: "RFM con datos limpios de retail"
+        columns:
+          - name: customer_id
+            description: "Identificador único de cada usuario"
+            tests:
+              - not_null        

@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="rfm_segment", model=get_where_subquery(ref('fct_rfm_analysis')), values=["Campeones","Clientes Leales","Nuevos Clientes","No Podemos Perderlos","Hibernando / Perdidos","Regulares / Potenciales"]) }}
