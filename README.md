@@ -179,6 +179,12 @@ dbt docs serve   # → http://localhost:8080
 
 ---
 
+## 5. Dashboard
+
+<img width="995" height="748" alt="image" src="https://github.com/user-attachments/assets/eda8cf26-a44d-4595-8cb6-ff2624d17bbc" />
+
+Link: https://datastudio.google.com/reporting/962413ce-16e7-4fba-814c-2ff2c2ef7ea8
+
 ## 🧠 Architecture Decisions
 
 | Decision | Why |
