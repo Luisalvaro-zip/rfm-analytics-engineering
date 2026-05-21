@@ -221,7 +221,7 @@ Transactions from a UK-based e-commerce retailer (2009–2011)
 
 **Luis Alvaro**  
 Digital Analytics → Analytics Engineering  
-[LinkedIn](https://www.linkedin.com/in/luisalvaromendozasilva-analyticsengineer/) · [GitHub](https://github.com/Luisalvarox-zip)
+[LinkedIn](https://www.linkedin.com/in/luisalvaromendozasilva-analyticsengineer/) · [GitHub](https://github.com/Luisalvaro-zip)
 
 ---
 
