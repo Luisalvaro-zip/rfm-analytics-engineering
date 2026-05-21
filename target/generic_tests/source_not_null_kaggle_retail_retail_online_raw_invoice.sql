@@ -1,1 +1,0 @@
-{{ test_not_null(column_name="invoice", model=get_where_subquery(source('kaggle_retail', 'retail_online_raw'))) }}
